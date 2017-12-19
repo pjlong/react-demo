@@ -1,0 +1,52 @@
+body {
+  font-family: Open Sans, Helvetica, sans-serif;
+}
+
+h1 {
+  color: tomato;
+}
+
+.todo-list {
+  display: flex;
+  flex-flow: column;
+  margin: 5rem auto;
+  width: 20em;
+}
+
+.todo-item {
+  border: 1px solid #000;
+  flex: 1;
+  list-style-type: none;
+
+  .todo-item-wrapper {
+    display: flex;
+    font-size: 1.5rem;
+    padding: .5rem .7rem;;
+  }
+
+  span {
+    display: inline-block;
+    flex: 1;
+  }
+
+  input {
+    border: 0;
+    display: inline-block;
+    flex: 1;
+  }
+
+  button {
+    border: 0;
+    background: none;
+    font-weight: medium;
+
+    &:hover {
+      background-color: #ddd;
+    }
+
+    &:active {
+      font-weight: bold;
+      background-color: #aaa;
+    }
+  }
+}
